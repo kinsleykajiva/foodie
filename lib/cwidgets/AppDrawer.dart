@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodie/activities/LoginAcivity.dart';
-import 'package:foodie/activities/FoodsActivity.dart';
+import 'package:foodie/activities/MainActivity.dart';
 import 'package:foodie/activities/PaymentsActivity.dart';
 import 'package:foodie/activities/OrdersActivity.dart';
 
@@ -28,11 +28,13 @@ class AppDrawer extends StatelessWidget{
         padding: EdgeInsets.zero,
         children: <Widget>[
           _createHeader(),
-          ListTile(title:Text( 'Login'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginAcivity()))  },),
-          ListTile(title:Text( 'Foods'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => FoodsActivity()))  },),
-          ListTile(title:Text( 'Payments'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => PaymentsActivity()))  },),
-          ListTile(title:Text( 'Orders'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => OrdersActivity()))  },),
 
+          ListTile(title:Text( 'Foods'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MainActivity()))  },),
+          Divider(),
+          ListTile(title:Text( 'Payments'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => PaymentsActivity()))  },),
+          Divider(),
+          ListTile(title:Text( 'Orders'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => OrdersActivity()))  },),
+          ListTile(title:Text( 'Login'),trailing: Icon(Icons.contacts),onTap: ()=>{Navigator.of(context).pop(), Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginAcivity()))  },),
           Divider(),
 
         ],

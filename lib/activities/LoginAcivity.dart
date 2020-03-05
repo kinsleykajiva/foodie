@@ -81,7 +81,7 @@ class _LoginAcivity extends State<LoginAcivity>{
                 decoration: BoxDecoration(
 
                     image: DecorationImage(
-                        image: AssetImage('assets/food_1.png'),
+                        image: AssetImage('assets/food_1.jpg'),
                         fit: BoxFit.contain,
 
                         alignment: Alignment.topCenter
@@ -96,7 +96,7 @@ class _LoginAcivity extends State<LoginAcivity>{
                       alignment: Alignment.center,
                       color: Colors.grey.withOpacity(0.1),
                       child: Text(
-                        "LegalWare",
+                        "Foodie",
                         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold,color: Colors.blueAccent
                         ),
                       ),
