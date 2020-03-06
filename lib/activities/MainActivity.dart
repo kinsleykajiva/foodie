@@ -86,7 +86,7 @@ class _MainActivityState extends State<MainActivity> {
          ));
         },itemCount: FoodItems.length,)
       ),
-      floatingActionButton: FloatingActionButton( onPressed: _incrementCounter,  tooltip: 'Increment', child: Icon(Icons.add),),
+
     );
   }
 }
